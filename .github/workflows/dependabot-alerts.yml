@@ -12,7 +12,7 @@ on:
         default: '11'
 
 env: 
-  fork-owner: rajbos-actions-test # where the forks are place
+  fork-owner: pahrens-github # where the forks are place
     
 jobs:
   find-action-name:
