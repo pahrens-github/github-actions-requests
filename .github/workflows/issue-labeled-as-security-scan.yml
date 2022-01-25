@@ -222,7 +222,6 @@ jobs:
       with:
         path: issues
         name: trivy-issues.txt
-        mime-type: application/text
         
     - name: Update comment with results
       run: |
