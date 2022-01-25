@@ -5,12 +5,12 @@ on:
     types: [labeled]
         
 env: 
-  fork-destination: rajbos-actions # where to place the forks
+  fork-destination: pahrens-github # where to place the forks
     
 jobs:
   find-action-name:
     if: github.event.label.name == 'final-signoff'
-    uses: rajbos/github-actions-requests/.github/workflows/get-action-from-issue.yml@main
+    uses: pahrens-github/github-actions-requests/.github/workflows/get-action-from-issue.yml@main
     with:
       issue_number: ${{ github.event.inputs.issue }}
 
